@@ -1,0 +1,32 @@
+<html>
+<style>
+    .center {
+        text-align: center;
+    }
+</style>
+<head>
+    <title>SendShine</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="index.js"></script>
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.3.0/components/button.min.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.3.0/components/input.min.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.3.0/components/header.min.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.3.0/components/segment.min.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.3.0/components/card.min.css" />
+
+</head>
+<body>
+    <h1 class="center ui header massive">SendShine Concept</h1>
+    <p class="center ui header medium">SendShine is a social media service that only has positive messages by checking sentiment.</p>
+    <div class="ui segment center">
+        <input id="input" class="ui input" onchange="sendMessage()" />
+        <button type="button" class="ui button positive" onclick="sendMessage()">Post!</button>
+    </div>
+    <button type="button" class="center ui button negative" onclick="clearPosts()">Clear Posts</button>
+
+    
+    <div class="ui cards" id="messages" style="padding-top: 30px;">
+        
+    </div>
+</body>
+</html>
