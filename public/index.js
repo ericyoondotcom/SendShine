@@ -5,7 +5,7 @@ function sendMessage(){
     $.get("/sendMessage/" + msg, function(res){
         var sentiment = res.sentiment;
         console.log(sentiment);
-        if(sentiment <= 0){
+        if(sentiment <= -0.1){
             alert("Whoops! Your post was deemed negative. Edit it so it would make other people HAPPY!");
         }else{
             reloadData();
