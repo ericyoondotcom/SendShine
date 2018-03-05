@@ -3,6 +3,9 @@
     .center {
         text-align: center;
     }
+    body {
+        background-color: rgb(255, 255, 240);
+    }
 </style>
 <head>
     <title>SendShine</title>
@@ -23,7 +26,7 @@
         <button type="button" class="ui button positive" onclick="sendMessage()">Post!</button>
     </div>
     <button type="button" class="center ui button negative" onclick="clearPosts()">Clear Posts</button>
-
+    <button type="button" class="center ui button primary" onclick="reloadData()">Reload</button>
     
     <div class="ui cards" id="messages" style="padding-top: 30px;">
         

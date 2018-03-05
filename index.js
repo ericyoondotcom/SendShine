@@ -27,7 +27,7 @@ app.get("/sendMessage/:msg", function(req, res) {
         console.log(`Sentiment score: ${sentiment.score}`);
         console.log(`Sentiment magnitude: ${sentiment.magnitude}`);
 
-        if(sentiment.score <= 0){
+        if(sentiment.score < 0){
             console.log("negative post detected");
         }else{
             messages.push(req.params.msg);
